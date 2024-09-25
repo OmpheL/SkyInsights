@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sky Insights Weather App</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <div class="header">
+          <h1>Sky Insights</h1>
+          <div class="search-bar">
+            <input
+              type="search"
+              placeholder="Enter a city..."
+              class="search-input"
+              id="city-input"
+            />
+            <input
+              type="submit"
+              class="search-button"
+              value="Search"
+              id="search-button"
+            />
+          </div>
+        </div>
+        <div class="weather-info">
+          <br />
+          <h2 id="city-name">City</h2>
+          <div class="weather-details">
+            <ul>
+              <li>
+                <div id="date-time" class="date-time"></div>
+                <div id="weather-description" class="weather-description"></div>
+              </li>
+              <li>
+                Humidity: <strong id="humidity">N/A</strong>, Winds:
+                <strong id="winds">N/A</strong>
+              </li>
+            </ul>
+            <div class="weather-current">
+              <h2 class="current-temperature" id="temperature">N/A</h2>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <p>
+            This project was coded by
+            <a href="https://github.com/OmpheL" target="_blank"
+              >Omphemetse Lekaba</a
+            >
+            and is on
+            <a href="#" target="_blank"> GitHub</a>
+            and hosted on
+            <a href="#" target="_blank">Netlify</a>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="src/script.js"></script>
+  </body>
+</html>
