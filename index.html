@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sky Insights Weather App</title>
+    <title>Weather App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
@@ -11,6 +15,10 @@
       <div class="weather-app">
         <div class="header">
           <h1>Sky Insights</h1>
+          <em>Know the Skies, Plan with Confidence</em>
+          <button id="theme-toggle" class="theme-toggle-button">
+            Dark Theme
+          </button>
           <div class="search-bar">
             <input
               type="search"
@@ -26,13 +34,12 @@
             />
           </div>
         </div>
+
         <div class="weather-info">
-          <br />
           <h2 id="city-name">City</h2>
           <div class="weather-details">
             <ul>
               <li>
-                <div id="date-time" class="date-time"></div>
                 <div id="weather-description" class="weather-description"></div>
               </li>
               <li>
@@ -45,6 +52,11 @@
             </div>
           </div>
         </div>
+
+        <div class="forecast">
+          <div class="forecast-container" id="forecast-container"></div>
+        </div>
+
         <footer>
           <p>
             This project was coded by
@@ -65,7 +77,7 @@
         </footer>
       </div>
     </div>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <script src="src/script.js"></script>
   </body>
 </html>
